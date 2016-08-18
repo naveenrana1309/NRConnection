@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NRConnection_Example' do
+  pod 'NRConnection', :path => '../'
+
+  target 'NRConnection_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
