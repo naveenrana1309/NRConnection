@@ -1,0 +1,6 @@
+framework module NRConnection {
+  umbrella header "NRConnection-umbrella.h"
+
+  export *
+  module * { export * }
+}

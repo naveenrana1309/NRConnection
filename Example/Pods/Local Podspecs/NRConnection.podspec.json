@@ -1,0 +1,30 @@
+{
+  "name": "NRConnection",
+  "version": "0.1.0",
+  "summary": "A short description of NRConnection.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/NRConnection",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "naveenrana1309": "naveenrana1309@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/NRConnection.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NRConnection/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 3.3"
+    ],
+    "ReachabilitySwift": [
+      "~> 2.3"
+    ]
+  }
+}

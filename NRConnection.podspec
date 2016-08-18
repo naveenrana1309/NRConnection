@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'NRConnection'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of NRConnection.'
+s.name             = 'NRConnection'
+s.version          = '1.0.0'
+s.summary          = 'NRConnection lets use the network layer in the simplest way. Send/Get parameters,images and videos from/to server in a simplest way.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,30 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = <<-DESC
+NRConnection: lets use the network layer in the simplest way. Send/Get parameters,images and videos from/to server in a simplest way. Well there are various network classes available for open source, but most of them missing the simplicity . NRConnection allows developer to post parameters, images and videos in a simplest way. Just a single method for video and images which needs the array of images and videos and NRConnection sends it to the server in a most elegant way with the use of Alamofire. You can get the success/failure with the help of NRCompletionHandler.
+.
+DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/NRConnection'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'naveenrana1309' => 'naveenrana1309@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/NRConnection.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.homepage         = 'https://github.com/naveenrana1309/NRConnection'
+# s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'naveenrana1309' => 'naveenrana1309@gmail.com' }
+s.source           = { :git => 'https://github.com/naveenrana1309/NRConnection.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+s.social_media_url = 'https://www.linkedin.com/in/naveen-rana-9a371a40'
 
-  s.source_files = 'NRConnection/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'NRConnection' => ['NRConnection/Assets/*.png']
-  # }
+s.ios.deployment_target = '8.0'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.source_files = 'NRConnection/Classes/**/*'
+
+# s.resource_bundles = {
+#   'NRConnection' => ['NRConnection/Assets/*.png']
+# }
+
+# s.public_header_files = 'Pod/Classes/**/*.h'
+# s.frameworks = 'UIKit', 'MapKit'
+s.dependency 'Alamofire', '~> 3.3'
+s.dependency 'ReachabilitySwift', '~> 2.3'
+
 end

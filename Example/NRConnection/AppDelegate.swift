@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  NRConnection
 //
-//  Created by naveenrana1309 on 08/18/2016.
-//  Copyright (c) 2016 naveenrana1309. All rights reserved.
+//  Created by Naveen Rana on 08/18/2016.
+//  Copyright (c) 2016 Naveen Rana. All rights reserved.
 //
 
 import UIKit

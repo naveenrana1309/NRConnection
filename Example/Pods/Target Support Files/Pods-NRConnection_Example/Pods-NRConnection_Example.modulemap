@@ -1,0 +1,6 @@
+framework module Pods_NRConnection_Example {
+  umbrella header "Pods-NRConnection_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

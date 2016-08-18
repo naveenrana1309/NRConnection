@@ -1,0 +1,6 @@
+framework module Pods_NRConnection_Tests {
+  umbrella header "Pods-NRConnection_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

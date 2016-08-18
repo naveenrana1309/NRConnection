@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (3.4.1)
+  - NRConnection (0.1.0):
+    - Alamofire (~> 3.3)
+    - ReachabilitySwift (~> 2.3)
+  - ReachabilitySwift (2.3.3)
+
+DEPENDENCIES:
+  - NRConnection (from `../`)
+
+EXTERNAL SOURCES:
+  NRConnection:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  NRConnection: fd9f39d47174d8adf7b3c075352d9984d481a1f8
+  ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
+
+PODFILE CHECKSUM: e89c9e483e46c99b8e8561009a895bf1fa11f9c5
+
+COCOAPODS: 1.1.0.beta.1
