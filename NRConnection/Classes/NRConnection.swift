@@ -6,17 +6,26 @@
 //
 //
 
-//---------------- This class is used as Network Layer in the the app ---------------------------------------
 
 import Foundation
 import Alamofire
 import ReachabilitySwift
 
-public var BASE_URL = "https://jsonplaceholder.typicode.com/"
+/// You can change this base url with your server url . This is public so you can keep it in your configuaration file and change accordingly.
+public var BASE_URL = "https:yourserverurl/"
 
+/// Completionhandler for getting the DataServiceResponse and result . you can check if response is succcessful and proceed with the result parameter accordingly.
 public typealias NRCompletionHander = (response: DataServiceResponse ,result: AnyObject?) -> Void
+
+/// This class is used as Network Layer in the the app. This mean your app can interact with the server with only this class.
+
 public class NRConnection {
     
+    /**
+     Check if internet is available or not
+     
+     - Returns: true if internet is available else false
+ */
     
    public class func isInternetAvailable() -> Bool {
         
@@ -33,6 +42,16 @@ public class NRConnection {
         return false
     }
     
+    /**
+     Call this method when you want to hit your server.
+     
+     - Parameters:
+     - methodType: enum  OPTIONS, GET, HEAD, POST, PUT, PATCH, DELETE, TRACE, CONNECT
+     - serviceName: This will append with baseurl (www.yourserverurl/servicename).
+     - parameters: your dictionary holding key value pairs (eg.["userId":"5"]).
+     - completionHandler: Completionhandler for getting the DataServiceResponse and result . you can check if response is succcessful and proceed with the result parameter accordingly.
+
+ */
     
     public class func callServiceWithName(methodType: Alamofire.Method = .POST,serviceName : String , parameters : Dictionary<String,AnyObject>, completionHandler : NRCompletionHander) {
         
@@ -70,6 +89,19 @@ public class NRConnection {
         }
         
     }
+    
+    /**
+     Call this method to send images and videos with parameters to your server.
+     
+     - Parameters:
+     - methodType: enum  OPTIONS, GET, HEAD, POST, PUT, PATCH, DELETE, TRACE, CONNECT
+     - serviceName: This will append with baseurl (www.yourserverurl/servicename).
+     - parameters: your dictionary holding key value pairs (eg.["userId":"5"]).
+     - imagesArray: array of UIImages.
+     - videoArray: array of NSData.You can get the NSData from the url of video by using NSData(contentofUrl: "videoUrl")
+     - completionHandler: Completionhandler for getting the DataServiceResponse and result . you can check if response is succcessful and proceed with the result parameter accordingly.
+     
+     */
     
     public class func callServiceWithImagesVideosArray(methodType: Alamofire.Method = .POST ,imagesArray :[UIImage] = [],videoArray: [NSData] = [] , parameters : Dictionary<String,AnyObject>, serviceName: String ,completionHandler : NRCompletionHander) {
     
@@ -139,6 +171,15 @@ public class NRConnection {
         
         
     }
+    
+    /**
+     Call simple url request to your server.
+     
+     - Parameters:
+     - url: url you want to hit to server.
+     - completionHandler: Completionhandler for getting the DataServiceResponse and result . you can check if response is succcessful and proceed with the result parameter accordingly.
+     
+     */
     
     public class func callServiceWithURL(url: NSURL, completionHandler : NRCompletionHander) {
         

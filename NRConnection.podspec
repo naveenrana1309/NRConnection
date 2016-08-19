@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 s.name             = 'NRConnection'
 s.version          = '1.0.0'
-s.summary          = 'NRConnection lets use the network layer in the simplest way. Send/Get parameters,images and videos from/to server in a simplest way.'
+s.summary          = 'NRConnection lets use the network layer in the simplest way. Send parameters,images and videos to server in a simplest way.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,7 @@ s.summary          = 'NRConnection lets use the network layer in the simplest wa
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
 s.description      = <<-DESC
-NRConnection: lets use the network layer in the simplest way. Send/Get parameters,images and videos from/to server in a simplest way. Well there are various network classes available for open source, but most of them missing the simplicity . NRConnection allows developer to post parameters, images and videos in a simplest way. Just a single method for video and images which needs the array of images and videos and NRConnection sends it to the server in a most elegant way with the use of Alamofire. You can get the success/failure with the help of NRCompletionHandler.
-.
+NRConnection: lets use the network layer in the simplest way. Send parameters,images and videos to server in a simplest way. Well there are various network classes available for open source, but most of them missing the simplicity . NRConnection allow developers to send parameters, images and videos to server in a simplest way. Just a single method for video and images which needs the array of images and videos and NRConnection sends it to the server in a most elegant way with the use of Alamofire. You can get the success/failure with the help of NRCompletionHandler.
 DESC
 
 s.homepage         = 'https://github.com/naveenrana1309/NRConnection'
@@ -29,7 +28,6 @@ s.author           = { 'naveenrana1309' => 'naveenrana1309@gmail.com' }
 s.source           = { :git => 'https://github.com/naveenrana1309/NRConnection.git', :tag => s.version.to_s }
 
 s.social_media_url = 'https://www.linkedin.com/in/naveen-rana-9a371a40'
-
 s.ios.deployment_target = '8.0'
 
 s.source_files = 'NRConnection/Classes/**/*'
