@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'NRConnection'
-s.version          = '1.0.0'
+s.version          = '1.0.1'
 s.summary          = 'NRConnection lets use the network layer in the simplest way. Send parameters,images and videos to server in a simplest way.'
 
 # This description is used to generate tags and improve search results.
