@@ -27,7 +27,8 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'naveenrana1309' => 'naveenrana1309@gmail.com' }
 s.source           = { :git => 'https://github.com/naveenrana1309/NRConnection.git', :tag => s.version.to_s }
 
-s.social_media_url = 'https://www.linkedin.com/in/naveen-rana-9a371a40'
+# s.social_media_url = 'https://www.linkedin.com/in/naveen-rana-9a371a40'
+
 s.ios.deployment_target = '8.0'
 
 s.source_files = 'NRConnection/Classes/**/*'
